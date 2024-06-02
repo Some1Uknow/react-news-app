@@ -1,7 +1,17 @@
-export default function App() {
+import Headlines from "./components/Headlines";
+function App() {
   return (
-    <h1 className="text-3xl font-bold">
-      Hello world!
-    </h1>
-  )
+    <div className="App">
+      <header className="bg-blue-500 p-4 flex justify-between items-center">
+        <h1 className="text-white text-4xl font-semibold">
+          DailyNews - Built using NewsAPI
+        </h1>
+      </header>
+      <main>
+        <Headlines />
+      </main>
+    </div>
+  );
 }
+
+export default App;
